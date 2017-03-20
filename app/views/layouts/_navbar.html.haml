@@ -1,0 +1,22 @@
+.navbar-fixed
+  %nav.orange.darken-4.z-depth-4
+    .nav-wrapper
+      %a.titles.brand-logo.center.green-text.darken-10{:href => "/"} Topline Hospitality
+      %a.brand-logo.left{:href => "assets/images/TL_mark_for_web.png"}
+      %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+        %i.material-icons menu
+      %ul#nav-mobile.right.hide-on-med-and-down
+        %li.white-text
+          = link_to 'Home', root_path
+        %li.white-text
+          = link_to 'About', about_path
+        %li.white-text
+          = link_to 'Contact', contact_path
+      %ul#mobile-demo.side-nav
+        %li.white-text
+          = link_to 'Home', root_path
+        %li.white-text
+          = link_to 'About', about_path 
+        %li.white-text
+          = link_to 'Contact', contact_path
+        
