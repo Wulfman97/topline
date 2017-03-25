@@ -15,15 +15,13 @@ html {
   margin: 0 auto -155px;
 }
 
-.footer{
-  height: 155px; 
-}
 
 p {
   font-size: 12pt;
 }
 
 li {
+  text-align: left;
   font-size: 12pt;
 }
 
@@ -31,8 +29,6 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  position: relative;
-  // overflow: scroll;
 }
 
 main {
@@ -40,26 +36,47 @@ main {
 }
 
 .home { 
-  background: image-url('greatfalls.jpg') no-repeat center center scroll; 
-  -webkit-background-size: cover;
+  // position: relative;
+  //   z-index: 1;
+  // background-color: #90caf9;
+  // background: image-url('greatfalls.jpg') no-repeat center center scroll; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // opacity: 0.5;
+
+  // position:absolute;
+  // padding:0;
+  // margin:0;
+
+  // top:0;
+  // left:0;
+
+  // width: 100%;
+  // height: 100%;
+}
+
+.background_img { 
+  position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: image-url('greatfalls.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.5;
-
-  position:absolute;
-  padding:0;
-  margin:0;
-
-  top:0;
-  left:0;
-
-  width: 100%;
-  height: 100%;
-}
+  background-size: cover; 
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+  }
 .about {
   position: relative;
     z-index: 1;
+  background-color: #90caf9;
 }
 
 .about .background_img { 
@@ -112,7 +129,20 @@ main {
 //   height: 100%;
 
 }
-
+nav ul li a{
+  color: #e65100;
+}   
+.circle-image{
+    width:125px;
+    height:125px;
+    border-radius:50%;
+}
+.brand-logo img {
+    height: 64px;
+}
+.icon-brown{
+   color: #e65100;
+}
 .titles{
   font-family:sans-serif;
   color:green;
@@ -142,3 +172,13 @@ main {
   height: 100%;
   background:rgba(255,255,255,0.65)
   }
+
+.parallax-container {
+      height: 800px;
+      opacity: .4;
+    }
+
+.footer{
+  background:transparent;
+}
+

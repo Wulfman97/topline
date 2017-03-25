@@ -1,22 +1,26 @@
 .navbar-fixed
   %nav.orange.darken-4.z-depth-4
-    .nav-wrapper
-      %a.titles.brand-logo.center.green-text.darken-10{:href => "/"} Topline Hospitality
-      %a.brand-logo.left{:href => "assets/images/TL_mark_for_web.png"}
+    .nav-wrapper.green-text
+      %a.titles.brand-logo.align-left{:href => "/"}
+      %a.brand-logo.center.responsive-img{:href => "/"}
+        %img.brand-logo{:src => "Topline_Hospitality_Nav.jpg"}
       %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
         %i.material-icons menu
-      %ul#nav-mobile.right.hide-on-med-and-down
-        %li.white-text
+      %div.green-text
+        %ul#nav-mobile.right.hide-on-med-and-down.brown.darken-4.z-depth-4.green-text
+          %li.green-text
+            = link_to 'Home', root_path
+          %li.green-text
+            = link_to 'About', about_path
+          %li.green-text
+            = link_to 'Contact', contact_path
+      %ul#mobile-demo.side-nav.orange.darken-4.z-depth-4.icon-brown.darken-4
+        %li
+          %img.responsive-img{:src => "TL_mark_for_web.png"}{:href => "/"}
+        %li
           = link_to 'Home', root_path
-        %li.white-text
-          = link_to 'About', about_path
-        %li.white-text
-          = link_to 'Contact', contact_path
-      %ul#mobile-demo.side-nav
-        %li.white-text
-          = link_to 'Home', root_path
-        %li.white-text
+        %li
           = link_to 'About', about_path 
-        %li.white-text
+        %li
           = link_to 'Contact', contact_path
         
