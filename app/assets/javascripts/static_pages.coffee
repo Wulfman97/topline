@@ -7,9 +7,9 @@ $(document).ready ->
 
 $(document).ready ->
       $('.parallax').parallax()
-      
+
 http = require('http')
 setInterval (->
-  http.get 'http://<your app name>.herokuapp.com'
+  http.get 'http://topline-hospitality.herokuapp.com/'
   return
 ), 300000
